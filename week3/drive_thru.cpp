@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+
+    vector<string> food(n), drink(m);
+
+    for (int i = 0; i < n; i++)
+        cin >> food[i];
+
+    for (int i = 0; i < m; i++)
+        cin >> drink[i];
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << food[i] << " " << drink[j] << "\n";
+        }
+    }
+
+    return 0;
+}
